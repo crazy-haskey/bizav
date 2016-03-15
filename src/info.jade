@@ -1,0 +1,37 @@
+extend templates/page
+
+block title
+  title Консалтинг
+  
+block content
+  - var num = 4;
+  - var contentTitle = 'Зарубежным компаниям бизнес авиации и консалтинговым компаниям.';
+  - var infoMain = '';
+  - var infoMore_1 = '';
+  - var infoMore_2 = '';  
+  -
+    var services = [
+      {
+        description: '<b>техническое представительство;</b>'
+      },
+      {
+        description: '<b>маркетинговые исследования по конкретным заказам;</b>'
+      },
+      {
+        description: '<b>статистика;</b>'
+      },
+      {
+        description: '<b>поиск партнеров;</b>'
+      },
+      {
+        description: '<b>организация переговоров и юридического сопровождения сделок;</b>'
+      },
+      {
+        description: 'взаимодействие с клиентами;</b>'
+      },
+      {
+        description: '<b>содействие в вопросах погашения задолженности российским клиентом;'
+      }
+    ]
+  
+  +servicePage()

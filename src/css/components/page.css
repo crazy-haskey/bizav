@@ -1,0 +1,103 @@
+.page_main {
+  min-width: 1210px;
+  width: 100%;
+  background: #000000 url('../img/back.jpg') no-repeat 50% 0;
+  margin-top: -1px;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+.wrapper-outer {
+  position: relative;
+  width: 1210px;
+  margin: 0 auto;
+}
+.wrapper-inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+.grad-left,
+.grad-right {
+  position: absolute;
+  width: 0px;
+  height: 2000px;
+  z-index: 1;
+}
+.grad-left {
+  left: 0px;
+  box-shadow: -600px 0 160px 120px #000000;
+}
+.grad-right {
+  right: 0px;
+  box-shadow: 600px 0 160px 120px #000;
+}
+.wrapper-logo {
+  position: relative;
+  padding: 21px 0;
+  border-width: 0 4px;
+  border-style: solid;
+  border-color: #ffd543;
+  border-image: linear-gradient(to bottom, #ffd543 0%, #dc8c0c 56%, #ffd543 100%) 1 100%;
+  box-shadow: inset 0 0 5px 0 #000,
+              0 0 5px 0 #000;
+  z-index: 3;
+}
+.bar_logo {
+  position: relative;
+  height: 4px;
+  background-color: #ffd543;
+  z-index: 5;
+}
+.bar_logo-top {
+  box-shadow: 0 -1px 1px 0 #000000;
+}
+.bar_logo-bottom {
+  box-shadow: 0 1px 1px 0 #000;
+  margin: 0 0 20px 0;
+}
+.link-logo {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+}
+.link-logo .logo {
+  width: 360px;
+  filter: drop-shadow(0 1px 5px #000000);
+}
+.logo-title_wrapper {
+  position: relative;
+  margin: 15px 0 0 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-align: center;
+  line-height: 33px;
+}
+.logo-title {
+  position: relative;
+  background: repeating-linear-gradient(to bottom, #ffd543 0px, #ffd543 19px, #dc8c0c 19px, #dc8c0c 23px, #ffd543 31px, #ffd543 33px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  z-index: 5;
+}
+.shadow-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.shadow-wrapper .font-shadow {
+  position: relative;
+  text-shadow: 1px 1px 3px #140905;
+  z-index: 1;
+}
+.no-backgroundcliptext .logo-title {
+  background: transparent;
+  color: #ffd543;
+  text-shadow: 2px 2px 6px #140905;
+}
+.shadow-bottom {
+  box-shadow: 0 0 300px 300px #000;
+}

@@ -1,0 +1,67 @@
+doctype html
+html(lang="en" class="no-svg")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge")
+    
+    block title
+    
+    meta(name="tagline", content="bizavsystems.ru")
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width")
+    
+    script(src="resources/js/modernizr.js")
+    
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css')
+    link(rel="icon", href="resources/img/favicon.ico", type="image/vnd.microsoft.icon")
+    link(rel="icon", href="resources/img/favicon.png", type="image/png")
+    link(rel="apple-touch-icon", href="resources/img/apple-touch-icon.png")
+    
+    link(rel="stylesheet", href="resources/css/style.css")    
+    
+  body
+    
+    include mixins
+    include header  
+    
+    .page_main
+    
+      .wrapper-outer
+      
+        .grad-left.vanish_moblie
+        .grad-right.vanish_moblie
+        .wrapper-inner
+        
+          .bar_logo.bar_logo-top
+          .wrapper-logo
+          
+            a.link-logo(href="index.html")
+              img.logo(src="resources/img/logo.svg" alt="Системы Бизнес Авиации")
+              
+            .logo-title_wrapper
+            
+              .logo-title Высококвалифицированные консультации
+                br 
+                | в области бизнес-авиации
+                
+              .shadow-wrapper
+                .font-shadow Высококвалифицированные консультации
+                  br 
+                  | в области бизнес-авиации
+            
+          .bar_logo.bar_logo-bottom
+          
+      .page_content
+        .wrapper-outer
+        
+          .wrapper-inner.clearfix
+            block content
+        .shadow-bottom
+    
+    include footer
+    
+    
+    script(src="resources/js/jquery-2.1.4.min.js")
+    script(src="resources/js/main.js")
+    
+    block scripts

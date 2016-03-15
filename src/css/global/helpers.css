@@ -1,0 +1,30 @@
+.hidden {
+  display: none !important;
+}
+
+@media(max-width: 767px){
+  .small_ninja {
+    display: none!important;
+  }
+}
+
+@media (min-width: 768px){
+  .big_ninja {
+    display: none!important;
+  }
+}
+
+.clearfix {
+  &:before,
+  &:after {
+     content: '';
+     display: table;
+   }
+  &:after {
+     clear: both;
+   }
+}
+
+.errortext {
+  color: #f86973;
+}

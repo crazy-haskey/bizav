@@ -1,0 +1,85 @@
+mixin serviceListItem(service)
+  li.content-main_list__item!= service.description
+  
+mixin serviceItem(service)
+  a.services_item(href="#{ service.link }" class="services_item-#{ service.class }")
+    .services_item-icon
+      .services_item-icon--link(class="icon--#{ service.class }")
+    .services_item-description--wrapper
+      .services_item-description--inner
+        .frame
+          .services_item-description!= service.text
+          .font-shadow!= service.text
+    .services_item-link
+
+mixin servicePage()
+  .content-main.clearfix   
+    
+    .content-main_description
+      .shadow-wrapper
+        .content-main_title!= contentTitle 
+        .content-main_title.font-shadow!= contentTitle
+    
+      .info-more.info-main!= infoMain
+      .info-more!= infoMore_1
+      .info-more!= infoMore_2
+      
+      
+    ul.content-main_list.list-simple      
+        
+      each service in services
+        +serviceListItem(service)      
+    
+    .content-main_footer
+      .logo-small_wrapper
+        img.logo-small(src="resources/img/logo-small.svg")
+        
+      .link-wrapper
+        .shadow-wrapper
+          a.link-footer.link-footer--phone.link-simple(href="tel:+7 495 120 80 20") +7 495 120 80 20
+        .shadow-wrapper    
+          a.link-footer.link-footer--email.link-simple(href="mailto:ask@bizavsystems.ru") ask@bizavsystems.ru               
+  
+  .content-nav.vanish_mobile
+    
+    .content-nav_header
+      a.content-nav_header__title.vanish_desktop(href="index.html") Услуги Bizav Systems
+      a.content-nav_header__title.vanish_mobile(href="index.html") Услуги <br /> Bizav Systems
+      .content-nav_header__bar
+      
+    -
+      var items = [
+        {
+          title: 'Для владельцев воздушных судов',
+          link: 'owner.html'
+        },
+        {
+          title: 'Сопровождение продажи и покупки',
+          link: 'aircrafts.html'
+        },
+        {
+          title: 'Купля и продажа существующих инфраструктур',
+          link: 'trade.html'
+        },
+        {
+          title: 'Для владельцев инфраструктуры бизнес авиации',
+          link: 'infrastructure.html'
+        },
+        {
+          title: 'Зарубежным и консалтинговым компаниям бизнес-авиации',
+          link: 'info.html'
+        }
+      ]
+      
+    each item, index in items
+      - var itemClass = (index == num) ? 'active' : ''
+      a.item-wrapper(href="#{ item.link }" class=itemClass)
+        .shadow-wrapper
+          .font-shadow!= item.title
+          .content-nav_item()!= item.title
+        
+        
+    .menu-mobile.vanish_desktop
+      .mid-bar
+      
+    a.content-nav--close(href="index.html")

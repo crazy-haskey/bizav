@@ -1,0 +1,148 @@
+.page_content {
+  padding-bottom: 43px;
+}
+.page_content-left {
+  float: left;
+  width: 780px;
+}
+.page_content .services_item {
+  display: block;
+  position: relative;
+  width: 780px;
+  height: 300px;
+  background: url('../img/menu-bg2x.png') no-repeat;
+  background-size: 780px 300px;
+  transition: all .3s;
+}
+.page_content .services_item:hover .services_item-description--wrapper,
+.page_content .services_item:hover .services_item-icon {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all .3s;
+}
+.page_content .services_item:not(:last-of-type) {
+  margin-bottom: 28px;
+}
+.page_content .services_item-icon {
+  position: relative;
+  float: left;
+  width: 193px;
+  height: 300px;
+}
+.page_content .services_item-icon--link {
+  display: block;
+  margin: 90px 0 0 35px;
+  width: 123px;
+  height: 120px;
+  background: url('../img/sprite.svg') no-repeat;
+  transition: all .3s;
+}
+.page_content .services_item-icon--link.icon--aircrafts {
+  background-position: -120px 0;
+}
+.page_content .services_item-icon--link.icon--trade {
+  background-position: -240px 0;
+}
+.page_content .services_item-icon--link.icon--infrastructure {
+  background-position: -360px 0;
+}
+.page_content .services_item-icon--link.icon--info {
+  background-position: -480px 0;
+}
+.page_content .services_item-description--wrapper {
+  position: relative;
+  display: table;
+  float: left;
+  height: 300px;
+  width: 587px;
+  padding: 0 35px 0 28px;
+}
+.page_content .services_item-description--inner {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  font-weight: 700;
+}
+.page_content .services_item-description {
+  position: relative;
+  z-index: 5;
+  background: repeating-linear-gradient(to bottom, #ffd543 0px, #ffd543 22px, #dc8c0c 22px, #dc8c0c 28px, #ffd543 36px, #ffd543 39px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.page_content .services_item .font-shadow {
+  position: absolute;
+  color: #ffd543;
+  top: 0;
+  left: 0;
+  text-shadow: 2px 2px 6px #140905;
+  z-index: 1;
+}
+.page_content .services_item .frame {
+  position: relative;
+}
+.page_content .services_item-link {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background: url('../img/bottom-arrow2x.png');
+  background-size: 60px;
+  transition: all .3s;
+}
+.page_content .services_item-link:hover {
+  opacity: .7;
+  transition: all .3s;
+}
+.page_content-right {
+  padding: 30px 35px 34px 35px;
+  float: right;
+  width: 380px;
+  background-image: url('../img/mask2x.png');
+  background-size: 380px 610px;
+  color: #fff;
+}
+.page_content .about-img {
+  margin-bottom: 20px;
+}
+.page_content .about-title {
+  margin: 17px 0 13px 0;
+  line-height: 32px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.page_content .about-info p {
+  font-size: 15px;
+  margin: 0 0 16px 0;
+  line-height: 19px;
+}
+.page_content .about-info p:last-of-type {
+  margin: 0;
+}
+.no-svg .services_item-icon--link {
+  background-image: url('../img/sprite2x.png');
+  background-size: 600px auto;
+}
+.no-svg.no-backgroundsize .services_item-icon--link {
+  background-image: url('../img/sprite.png');
+}
+.no-backgroundcliptext .services_item-description {
+  background: transparent;
+  color: #ffd543;
+  text-shadow: 2px 2px 6px #140905;
+}
+.no-backgroundcliptext .font-shadow {
+  display: none;
+}
+.no-backgroundsize .page_content .services_item {
+  background-image: url('../img/menu-bg.png');
+}
+.no-backgroundsize .page_content .services_item-link {
+  background-image: url('../img/bottom-arrow.png');
+}
+.no-backgroundsize .page_content-right {
+  background-image: url('../img/mask.png');
+}
