@@ -14,7 +14,7 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 ## Build / dev end
 
 ```sh
-$ grunt
+$ gulp
 ```
 
 Your app should now be running on [localhost:8080](http://localhost:8080/).
