@@ -9,8 +9,8 @@ $('.menu-mobile').click(
   $('.js_acc_trigger.active .acc_item_description').show();
 
 
-      $('.js_acc_trigger').on('click', function(){
-          var item = $(this);
+      $('.acc_item_title').on('click', function(){
+          var item = $(this).closest('.js_acc_trigger');
           if(!item.hasClass('active')){
               item.addClass('active');
               item.find('.acc_item_description').slideDown();

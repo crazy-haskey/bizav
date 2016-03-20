@@ -1967,4 +1967,31 @@ body {
   }
 }
 
+.acc_item.active .acc_item_title {
+  display: none;
+}
+
+.content-main, 
+.page_content-right, 
+.content-nav_header__title, 
+.page_header .link-simple, 
+.content-main .link-footer {
+  color: #eeeeee;
+}
+
+/*.logo-title,
+.page_header .nav_languages__item.active .link-simple,
+.page_content .services_item-description,
+.content-main_title,
+.content-nav .item-wrapper.active .content-nav_item,
+.content-nav--close,
+.acc_item_title {
+  background: red;
+}*/
+
+
 /*# sourceMappingURL=style.css.map */
+
+
+
+
