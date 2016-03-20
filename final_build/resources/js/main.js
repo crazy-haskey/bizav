@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+// sync column heights
+var right_col_height = $('.content-nav.vanish_mobile').outerHeight(true);
+var left_col_height = $('.content-main').outerHeight(true);
+var footer = $('.content-main_footer');
+
+if (footer.length && right_col_height > left_col_height) {
+  footer.css('margin-top', right_col_height - left_col_height)
+}
+
+
 $('.menu-mobile').click(
 
   function () {

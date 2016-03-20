@@ -1,3 +1,8 @@
+  .de .page_content .services_item-description--inner {
+    font-size: 26px;
+  }
+
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -871,7 +876,11 @@ body {
   margin: 0 auto;
   width: 360px;
 }
+.ru .link-logo .logo {
+  margin-left: 0;
+}
 .link-logo .logo {
+  margin-left: 45px;
   width: 360px;
   -webkit-filter: drop-shadow(0 1px 5px #000000);
           filter: drop-shadow(0 1px 5px #000000);
@@ -1075,7 +1084,7 @@ body {
   z-index: 1;
 }
 .content-main_list {
-  margin: 24px 0 44px 0;
+  padding: 24px 0 44px 0;
 }
 .content-main_list__item {
   position: relative;
@@ -1510,6 +1519,7 @@ body {
   background-image: url('../img/mask.png');
 }
 @media only screen and (max-width: 767px) {
+  
   .vanish_moblie {
     display: none;
   }
@@ -1688,14 +1698,8 @@ body {
     min-width: 230px;
     padding: 0;
   }
-  .page_content .services_item-description--inner {
+  .page_content .services_item-description--inner, .de .page_content .services_item-description--inner {
     font-size: 16px;
-    font-weight: 700;
-    overflow: hidden;
-    padding-right: 15px;
-  }
-  .page_content .services_item-description--inner-deu {
-    font-size: 20px;
     font-weight: 700;
     overflow: hidden;
     padding-right: 15px;
@@ -1998,6 +2002,8 @@ body {
   color: #eeeeee;
 }
 
+
+
 /*.logo-title,
 .page_header .nav_languages__item.active .link-simple,
 .page_content .services_item-description,
@@ -2007,6 +2013,15 @@ body {
 .acc_item_title {
   background: red;
 }*/
+
+
+.ru .page_content-right {
+  padding-bottom: 40px;
+}
+
+.special-fix1 {
+  margin-top: 114px;
+}
 
 
 /*# sourceMappingURL=style.css.map */
