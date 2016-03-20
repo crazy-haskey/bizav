@@ -1465,10 +1465,23 @@ body {
   font-weight: 700;
 }
 .page_content .about-info p {
-  font-size: 15px;
+  font-size: 16px;
   margin: 0 0 16px 0;
   line-height: 19px;
 }
+
+.page_content .about-en-info p {
+  font-size: 14px;
+  margin: 0 0 16px 0;
+  line-height: 27px;
+}
+
+.page_content .about-deu-info p {
+  font-size: 12px;
+  margin: 0 0 16px 0;
+  line-height: 16px;
+}
+
 .page_content .about-info p:last-of-type {
   margin: 0;
 }
