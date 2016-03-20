@@ -1694,6 +1694,12 @@ body {
     overflow: hidden;
     padding-right: 15px;
   }
+  .page_content .services_item-description--inner-deu {
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    padding-right: 15px;
+  }
   .page_content .services_item:not(:last-of-type) {
     margin-bottom: 15px;
   }
