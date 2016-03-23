@@ -1,5 +1,6 @@
   .de .page_content .services_item-description--inner {
     font-size: 26px;
+
   }
 
 
@@ -1248,7 +1249,7 @@ body {
 .content-nav_header__bar {
   width: 89px;
   height: 5px;
-  background: #f7c537;
+
 }
 .content-nav .shadow-wrapper {
   position: relative;
@@ -1423,6 +1424,14 @@ body {
   z-index: 5;
   background: -webkit-repeating-linear-gradient(top, #ffd543 0px, #ffd543 22px, #dc8c0c 22px, #dc8c0c 28px, #ffd543 36px, #ffd543 39px);
   background: repeating-linear-gradient(to bottom, #ffd543 0px, #ffd543 22px, #dc8c0c 22px, #dc8c0c 28px, #ffd543 36px, #ffd543 39px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.de .page_content .services_item-description {
+  background: -webkit-repeating-linear-gradient(top, #ffd543 0px, #ffd543 20px, #dc8c0c 20px, #dc8c0c 26px, #ffd543 33px, #ffd543 36px);
+  background: repeating-linear-gradient(to bottom, #ffd543 0px, #ffd543 20px, #dc8c0c 20px, #dc8c0c 26px, #ffd543 33px, #ffd543 36px);
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
@@ -1918,7 +1927,7 @@ body {
   .content-nav_header__bar {
     width: 217px;
     height: 2px;
-    background: #f7c537;
+
   }
   .content-nav_item {
     font-size: 16px;
