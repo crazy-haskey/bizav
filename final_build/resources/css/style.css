@@ -1527,6 +1527,8 @@ body {
 .no-backgroundsize .page_content-right {
   background-image: url('../img/mask.png');
 }
+
+
 @media only screen and (max-width: 767px) {
   
   .vanish_moblie {
@@ -1998,6 +2000,14 @@ body {
     text-shadow: 2px 2px 6px #140905;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .page_content .services_item-description--inner, .de .page_content .services_item-description--inner {
+    font-size: 14px;
+
+  }
+}
+
 
 .acc_item.active .acc_item_title {
   display: none;
